@@ -1,2 +1,3 @@
 # sails-sanpassport-example
-Sails app with sanpassport hook
+
+a [Sails](http://sailsjs.org) application example with [sanpassport](https://www.npmjs.com/package/sanpassport) hook.
