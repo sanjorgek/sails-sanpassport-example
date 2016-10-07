@@ -49,6 +49,10 @@ module.exports = {
         res.send(200);
       }
     });
+  },
+
+  ensureAuth: function(req, res) {
+    res.send(200);
   }
 };
 
