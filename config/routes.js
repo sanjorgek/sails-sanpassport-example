@@ -37,9 +37,8 @@ module.exports.routes = {
   },
 
   'get /user/secureRoute': [{policy: 'sessionAuth'},{controller:'UserController',action:'secureRoute'}],
-  'get /user/adminRoute': [{policy: 'ensureAdmin'},{controller:'UserController',action:'adminRoute'}],
   'post /user/signup': [{controller:'UserController',action:'signup'}],
-  'get /user/ensureAuth': [{policy: 'sessionAuth'},{controller:'UserController',action:'ensureAuth'}]
+  'get /user/ensureAuth': [{policy: 'sessionAuth'},{controller:'UserController',action:'ensureAuth'}],
 
   /***************************************************************************
   *                                                                          *
@@ -50,5 +49,7 @@ module.exports.routes = {
   * for configuration options and examples.                                  *
   *                                                                          *
   ***************************************************************************/
-
+  'post /login': "AuthController.login",
+  'post /logout': "AuthController.logout",
+  'post /signup': "AuthController.signup"
 };
