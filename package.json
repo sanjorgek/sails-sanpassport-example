@@ -22,7 +22,7 @@
     "rc": "1.0.1",
     "sails": "~0.12.3",
     "sails-disk": "~0.10.9",
-    "sails-hook-sanpassport": "sanjorgek/sails-hook-sanpassport"
+    "sails-hook-sanpassport": "sanjorgek/sails-hook-sanpassport#9f6a959"
   },
   "scripts": {
     "debug": "node debug app.js",

@@ -52,7 +52,7 @@ module.exports.policies = {
     '*': ['sessionAuth']
   },
   AuthController: {
-    login: ['login'],
+    login: ['localLogin'],
     logout: ['logout']
   }
 };

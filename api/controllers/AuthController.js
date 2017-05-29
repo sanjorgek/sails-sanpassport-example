@@ -14,7 +14,7 @@ module.exports = {
   },
   signup: function(req, res){
     var jsonBody = req.body;
-    sanpassport.createUser(jsonBody, function(err, user){
+    sails.sanpassport.local.createUser(jsonBody, function(err, user){
       if(err || !user){
         res.badRequest(404);
       }else{
